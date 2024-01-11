@@ -26,6 +26,7 @@
 		"build": "tsup src/index.ts --format cjs,esm --dts",
 		"lint": "tsc",
 		"commit": "./node_modules/cz-customizable/standalone.js",
+		"publish": "pnpm publish -r",
 		"prepare": "husky install",
 		"husky:permission": "chmod +x .husky/*"
 	},
