@@ -1,0 +1,50 @@
+{
+	"name": "fruit-store",
+	"version": "0.0.1",
+	"description": "🍓🍌 A library for generating random fruits that adds a burst of flavor to any project.",
+	"author": "chan9yu <wry5533@gmail.com>",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"packageManager": "pnpm@8.14.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chan9yu/fruit-store"
+	},
+	"lint-staged": {
+		"**/*.{ts,tsx}": [
+			"eslint --fix",
+			"prettier --write"
+		]
+	},
+	"config": {
+		"cz-customizable": {
+			"config": "./config/cz-config.js"
+		}
+	},
+	"scripts": {
+		"build": "tsup src/index.ts --format cjs,esm --dts",
+		"lint": "tsc",
+		"commit": "./node_modules/cz-customizable/standalone.js",
+		"prepare": "husky install",
+		"husky:permission": "chmod +x .husky/*"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.27.1",
+		"@commitlint/cli": "^18.4.4",
+		"@commitlint/config-conventional": "^18.4.4",
+		"@typescript-eslint/eslint-plugin": "^6.18.1",
+		"@typescript-eslint/parser": "^6.18.1",
+		"commitizen": "^4.3.0",
+		"conventional-changelog-conventionalcommits": "^7.0.2",
+		"cz-customizable": "6.3.0",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.1.3",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.2.0",
+		"prettier": "^3.1.1",
+		"tsup": "^8.0.1",
+		"typescript": "^5.3.3"
+	}
+}
