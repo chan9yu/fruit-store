@@ -1,6 +1,6 @@
 {
 	"name": "fruit-store",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "🍓🍌 A library for generating random fruits that adds a burst of flavor to any project.",
 	"author": "chan9yu <wry5533@gmail.com>",
 	"main": "dist/index.js",
