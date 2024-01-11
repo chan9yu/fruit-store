@@ -4,7 +4,7 @@
 
 <br />
 
-## 🚀 Installation
+## 📦 Installation
 
 install via node
 
@@ -21,9 +21,9 @@ pnpm add fruit-store
 
 <br />
 
-## Quick Start
+## 🚀 Quick Start
 
-On Node.js:
+on Node.js
 
 ```javascript
 import fruitStore from 'fruit-store';
@@ -40,7 +40,7 @@ fruitStore.rollArray(3); // "['🍌', '🍇', '🍑']"
 
 <br />
 
-## API
+## 🔗 API
 
 #### `roll()`
 
@@ -64,6 +64,6 @@ An array of strings representing random fruit emojis.
 
 <br />
 
-## License
+## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
